@@ -24,7 +24,7 @@ public class Controller {
     @GetMapping("/welcome")
     @ResponseBody
     public String welcome() {
-        return "Welcome";
+        return "Welcome this is git";
     }
 
     @GetMapping("/get/{id}")
