@@ -1,6 +1,7 @@
 package com.example.backend.service;
 
 import com.example.backend.dto.EmployeeDto;
+import com.example.backend.dto.UserDto;
 
 import java.util.List;
 
@@ -11,4 +12,6 @@ public interface Service {
     public EmployeeDto update(Long id,EmployeeDto employeeDto);
 
     void delete(Long id);
+
+    UserDto register(UserDto userDto);
 }
