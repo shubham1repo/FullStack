@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  security:
+    oauth2:
+      authorizationserver:
+        client:
+          online-shop:
+            registration:
+              client-id: "online-shop"
+              client-secret: "{noop}pwd"
+              client-authentication-methods:
+                - "client_secret_basic"
+              authorization-grant-types:
+                - "client_credentials"
+              scopes:
+                - "read"
+                - "write"
+                - "read.write"
